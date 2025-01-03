@@ -1,18 +1,13 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const myStr = "Hello";
-  const a = 2.5;
-  const myLink = "https://www.google.com";
-
   return (
     <div className="App">
-      <div className="content">
-        <h1>Hello Cyrus</h1>
-        <h1>{myStr}</h1>
-        <h1>{a}</h1>
-        <a href={myLink}>My Link</a>
-      </div>
+      <Navbar />
+      <div className="content">Hello World</div>
+      <Home />
     </div>
   );
 }
