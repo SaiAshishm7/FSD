@@ -1,9 +1,14 @@
 const Home = () => {
-    return (
-      <div className="home">
-        <h2>Home Page</h2>
-      </div>
-    );
+  const handleClick = () => {
+    console.log("Hello Everyone");
   }
-  
-  export default Home;
+
+  return (
+    <div className="home">
+      <h2>Home Page</h2>
+      <button onClick={handleClick}>Click</button>
+    </div>
+  );
+}
+
+export default Home;
