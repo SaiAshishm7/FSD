@@ -14,6 +14,6 @@ const Home = () => {
       <BlogList blogs={blogs.filter((blog) => blog.author === 'Cyrus')} title="Cyrus's blogs" />
     </div>
   );
-}
+
 
 export default Home;
