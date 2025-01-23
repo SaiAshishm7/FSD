@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ImageBackground } 
 from 'react-native';
 import React from 'react';
-import coffeeImg from '../assets/images/coffeee.png';
+import coffeeImg from "@/assets/images/coffeee.png";
 const App = () => {
   return (
     <View style={styles.container}>
