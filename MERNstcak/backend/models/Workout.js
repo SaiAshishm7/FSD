@@ -1,15 +1,20 @@
-const express=require('express')
+const mongoose = require('mongoose');
 
-const router = express.Router()
+const Schema = mongoose.Schema;
 
+const workoutSchema = new Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  load: {
+    type: Number,
+    required: true
+  },
+  reps: {
+    type: Number,
+    required: true
+  }
+}, { timestamps: true });
 
-// GET all workouts
-router.get('/', (req, res) => {
-    res.json({mssg: 'GET all workouts'})
-  })
-
-  router.post('/', (req, res) => {
-    res.json({mssg: 'POST request output'})
-  })
-
-module.exports=router
+module.exports = mongoose.model('Workout', workoutSchema);
