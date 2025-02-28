@@ -36,7 +36,6 @@ const mongoose = require('mongoose');
 const app = express();
 
 const workoutRoutes = require('./routes/workouts');
-
 app.use(express.json());
 
 app.use((req, res, next) => {
