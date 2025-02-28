@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home'; // Update the path to match the current location
 
 function App() {
   return (
